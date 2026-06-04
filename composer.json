@@ -1,0 +1,39 @@
+{
+    "name": "ledgertrail/laravel",
+    "description": "Laravel SDK for LedgerTrail — cryptographically verifiable audit logs",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/queue": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.0|^4.0",
+        "orchestra/testbench": "^9.0|^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LedgerTrail\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LedgerTrail\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["LedgerTrail\\LedgerTrailServiceProvider"],
+            "aliases": {
+                "AuditTrail": "LedgerTrail\\Facades\\AuditTrail"
+            }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
