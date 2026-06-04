@@ -3,6 +3,12 @@
     "description": "Laravel SDK for LedgerTrail — cryptographically verifiable audit logs",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Aguilar",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "illuminate/support": "^11.0|^12.0|^13.0",
